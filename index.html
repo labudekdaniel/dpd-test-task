@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <form name="calculate">
+                <div id="point-a">
+                    <p><strong>Point A:</strong></p>
+                    <label for="point-a">Latitude: </label>
+                    <input type="text" id="point-a-lat" name="point-a-lat" value="">
+                    <span class="error" id="a-lat-error"></span>
+                    <br><br>
+                    <label for="point-a">Longitude: </label>
+                    <input type="text" id="point-a-long" name="point-a-long" value="">
+                    <span class="error" id="a-long-error"></span>
+                </div>
+                <div id="point-b">
+                    <p><strong>Point B:</strong></p>
+                    <label for="point-b">Latitude: </label>
+                    <input type="text" id="point-b-lat" name="point-b-lat" value="">
+                    <span class="error" id="b-lat-error"></span>
+                    <br><br>
+                    <label for="point-b">Longitude: </label>
+                    <input type="text" id="point-b-long" name="point-b-long" value="">
+                    <span class="error" id="b-long-error"></span>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" name="submit" value="Calculate">
+                </div>
+            </form>
+        </div>
+        <br>
+        <div>
+            <div>
+                2.
+                <br>
+                Point C: <span id="point_c"></span>
+                <br>
+                Point D: <span id="point_d"></span>
+            </div>
+            <br>
+            <div>
+                3. Perimeter: <span id="perimeter">0</span> meter
+            </div>
+            <br>
+            <div>
+                4. Area: <span id="area">0</span> squaremeter
+            </div>
+            <br>
+            <div>
+                5. Total cost: <span id="cost">0</span> EUR
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="assets/js/calculate_process.js"></script>
